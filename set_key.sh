@@ -1,5 +1,3 @@
-
-
 #! /bin/bash
 if [ ! -d $HOME/.ssh ]; then
         `mkdir $HOME/.ssh`
@@ -22,3 +20,5 @@ echo `wget $PATH_TO_KEY`
 key=`echo $PATH_TO_KEY | sed 's_.*/__' `
 `cat $key >> $HOME/.ssh/authorized_keys`
 `rm $key`
+
+#bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_key.sh)
