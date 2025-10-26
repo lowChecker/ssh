@@ -15,5 +15,10 @@ fi
 PATH_TO_KEY="https://github.com/lowchecker.keys"
 echo `wget $PATH_TO_KEY`
 
+#todo #1 - handle failure to get key
+
+key=`echo $PATH_TO_KEY | sed 's_.*/__' `
+`cat $key >> $HOME/.ssh/authorized_keys`
+`rm $key`
 
 #bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_key.sh)
