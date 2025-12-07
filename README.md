@@ -2,7 +2,7 @@ bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_key.sh)
 <br/>
 bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/sshd_config.sh)
 <br/><br/>
-sudo bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_email.sh)
+curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_email.sh | sudo bash
 
 
 nano /etc/ssh/sshd_config
