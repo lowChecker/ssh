@@ -3,6 +3,8 @@ bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_key.sh)
 bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/sshd_config.sh)
 <br/><br/>
 curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_email.sh | sudo bash
+<br/>
+echo "Test mail from PVE" | mail -s "PVE Mailrise Test" nst@lowstyle.org
 
 
 nano /etc/ssh/sshd_config
