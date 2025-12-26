@@ -1,7 +1,10 @@
 bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_key.sh)
 <br/>
+## SSHD config file to use the SSH key set with the previous command 
+<br />
 bash <(curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/sshd_config.sh)
 <br/><br/>
+## Set NullMailer als repeater to send to mailrise
 curl -s https://raw.githubusercontent.com/lowChecker/ssh/main/set_email.sh | sudo bash
 <br/>
 echo "Test mail from PVE" | mail -s "PVE Mailrise Test" nst@lowstyle.org
