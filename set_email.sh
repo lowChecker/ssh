@@ -20,7 +20,7 @@ echo "🚀 Starting Nullmailer installation and configuration..."
 if dpkg -l | grep -q postfix; then
     echo "--- Removing conflicting Postfix installation ---"
     DEBIAN_FRONTEND=noninteractive apt-get purge -y postfix
-    DEBIAN_FRONTEND=noninteractive apt-get autoremove -y
+    #DEBIAN_FRONTEND=noninteractive apt-get autoremove -y
 fi
 
 # 2. Install Nullmailer
